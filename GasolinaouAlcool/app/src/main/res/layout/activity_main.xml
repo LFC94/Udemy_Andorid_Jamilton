@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94bd30"
+    tools:context="com.lfc.gasolinaoualcool.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text=" Preço Alcool "
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#415c00"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/editText_PrecoAlcool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="14dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Ex: 1.95"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Preço Gasolina"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#415c00"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/editText_PrecoGasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_PrecoAlcool"
+        android:layout_alignBottom="@+id/editText_PrecoAlcool"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Ex: 2.50"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button_Verificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/editText_PrecoAlcool"
+        android:layout_marginTop="20dp"
+        android:text="Verificar"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:id="@+id/textView_Resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_Verificar"
+        android:layout_alignLeft="@+id/button_Verificar"
+        android:layout_alignRight="@+id/button_Verificar"
+        android:layout_alignStart="@+id/button_Verificar"
+        android:layout_below="@+id/button_Verificar"
+        android:layout_marginTop="13dp" />
+
+</RelativeLayout>

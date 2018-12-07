@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.lfc.atmempresaconsultoria.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/image_Empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/menu_empresa" />
+
+    <ImageView
+        android:id="@+id/image_Servico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_servico"
+        android:layout_alignTop="@+id/image_Empresa"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/image_Cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image_Empresa"
+        android:layout_alignStart="@+id/image_Empresa"
+        android:layout_below="@+id/image_Empresa"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/menu_cliente" />
+
+    <ImageView
+        android:id="@+id/image_Contato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image_Servico"
+        android:layout_alignStart="@+id/image_Servico"
+        android:layout_alignTop="@+id/image_Cliente"
+        android:src="@drawable/menu_contato" />
+
+</RelativeLayout>
